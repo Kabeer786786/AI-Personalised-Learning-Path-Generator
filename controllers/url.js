@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 async function myHandler(req,res) {
-    // Step 1: Import the 'fs' module
+    // Step 1: Import the 'fs' module 
     
     // Step 2: Define the data you want to write
     const data = "This is the content to be written to the text file.";

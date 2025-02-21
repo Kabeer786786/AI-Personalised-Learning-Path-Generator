@@ -1,12 +1,12 @@
 
     User Profile:
-        - Education Level: Working Professional
-        - Major/Field of Education: Social Sciences
-        - Strongest Skill: Design
-        - Area of Technical Expertise: Marketing & Sales
-        - Current Learning Interests: Cultural Activities
-        - Future Career Goal: Researcher
-        - Study Preferences: Offline Classes
+        - Education Level: Postgraduate
+        - Major/Field of Education: Medical Science
+        - Strongest Skill: Analytical and Diagnostic Skills
+        - Area of Technical Expertise: Medical Researcher
+        - Current Learning Interests: Doctor (MBBS/MD):
+        - Future Career Goal: Doctor (MBBS/MD)
+        - Study Preferences: Workshops and Hackathons
 
         Based on the user's profile above,
         1. Recommended courses and resources for each area of interest from user's profile from top online platforms such as edX, NPTEL, Coursera, Youtube etc.. and provide a link to redirect the course page.

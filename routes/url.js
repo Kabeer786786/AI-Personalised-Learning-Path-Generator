@@ -9,7 +9,7 @@ let msg = '';
 
 // Redirect the given url
 router.get('/chatbot', async (req,res)=>{
-    return res.render('chatbot');
+    return res.render('chatbot'); 
 })
 router.post('/result',async (req, res) => {
     // Step 4: Access the data sent from the client-side

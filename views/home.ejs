@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Application</title>
+    <style>
+        /* Apply styles for the full-screen background */
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("./sdf.jpg"); /* Replace with your desired image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 10rem;
+        }
+
+        /* Button styles */
+        button {
+            padding: 20px 40px;
+            font-size: 20px;
+            color: #fff;
+            background-color: rgba(0, 123, 255, 0.8);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: rgba(0, 105, 217, 0.9);
+            transform: scale(1.05);
+        }
+
+        /* Title style */
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Subtitle style */
+        p {
+            font-size: 24px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top: -5rem;">
+        <h1>Welcome to CareerWise</h1>
+        <p>Experience the power of creativity at your fingertips!</p>
+        <button onclick="redirect()">Get Started</button>
+    </div>
+    
+
+    <script>
+        function redirect() {
+            window.location.href = "http://localhost:9000/chatbot"; // Replace with your desired URL
+        }
+    </script>
+
+</body>
+</html>

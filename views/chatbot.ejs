@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Question Form</title>
+    <link rel="stylesheet" href="/css/chatbot.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-main" id="frame">
+        <div class="container">
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+    
+            <div class="content">
+                <!-- Question 1 -->
+                <div class="question" id="question1">
+                    <div class="speech-bubble">
+                        <span><i class="fa-solid fa-building-columns fa-xl" style="color: #bb86fc;padding-right: 0.5rem;"></i></span> Your Education Level or Academic Background?
+                    </div>
+                    
+                    <div class="options">
+                        <button class="option-btn" onclick="selectOption(1, 'High School', this)">High School</button>
+                        <button class="option-btn" onclick="selectOption(1, 'Undergraduate', this)">Undergraduate</button>
+                        <button class="option-btn" onclick="selectOption(1, 'Graduate', this)">Graduate</button>
+                        <button class="option-btn" onclick="selectOption(1, 'Postgraduate', this)">Postgraduate</button>
+                        <button class="option-btn" onclick="selectOption(1, 'Working Professional', this)">Working Professional</button>
+                        <button class="option-btn" onclick="selectOption(1, 'Other', this)">Other</button>
+                    </div>
+                </div>
+    
+                <!-- Question 2 -->
+                <div class="question" id="question2" style="display: none;">
+                    <div class="speech-bubble">
+                        <span>
+                            <i class="fa-solid fa-graduation-cap fa-xl" style="color: #bb86fc;padding-right: 0.5rem;"></i>
+                        </span>What is your major or field of education?
+                    </div>
+                    <div class="options">
+                        <button class="option-btn" onclick="selectOption(2, 'Medical Science', this)">Medical Science</button>
+                        <button class="option-btn" onclick="selectOption(2, 'Arts', this)">Arts</button>
+                        <button class="option-btn" onclick="selectOption(2, 'Business', this)">Business</button>
+                        <button class="option-btn" onclick="selectOption(2, 'Technology', this)">Technology</button>
+                        <button class="option-btn" onclick="selectOption(2, 'Social Sciences', this)">Social Sciences</button>
+                        <button class="option-btn" onclick="selectOption(2, 'Other', this)">Other</button>
+                    </div>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="question" id="question3" style="display: none;">
+                    <div class="speech-bubble">
+                        <span><i class="fa-solid fa-hand-fist fa-xl" style="color: #bb86fc;padding-right: 0.75rem;"></i></span>What would you say is your strongest skill?
+                    </div>
+                    <div class="options">
+                        <button class="option-btn" onclick="selectOption(3, 'Entrepreneurial Mindset', this)">Entrepreneurial Mindset</button>
+                        <button class="option-btn" onclick="selectOption(3, 'Coding', this)">Coding</button>
+                        <button class="option-btn" onclick="selectOption(3, 'Analytical and Diagnostic Skills', this)">Analytical and Diagnostic Skills</button>
+                        <button class="option-btn" onclick="selectOption(3, 'Research and Problem-Solving', this)">Research and Problem-Solving</button>
+                        <button class="option-btn" onclick="selectOption(3, 'Design', this)">Design</button>
+                        <button class="option-btn" onclick="selectOption(3, 'Other', this)">Other</button>
+                    </div>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="question" id="question4" style="display: none;">
+                    <div class="speech-bubble">
+                        <span><i class="fa-solid fa-computer fa-xl" style="color: #bb86fc;padding-right: 0.75rem;"></i></span>What is your area of technical expertise?
+                    </div>
+                    <div class="options">
+                        <button class="option-btn" onclick="selectOption(4, 'Programming', this)">Programming</button>
+                        <button class="option-btn" onclick="selectOption(4, 'Artificial Intelligence and Data Science', this)"> Artificial Intelligence & Data Science</button>
+                        <button class="option-btn" onclick="selectOption(4, 'Graphic Design', this)">Graphic Design</button>
+                        <button class="option-btn" onclick="selectOption(4, 'Medical Researcher', this)">Medical Researcher</button>
+                        <button class="option-btn" onclick="selectOption(4, 'Marketing & Sales', this)">Marketing & Sales</button>
+                        <button class="option-btn" onclick="selectOption(4, 'Other', this)">Other</button>
+                    </div>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="question" id="question5" style="display: none;">
+                    <div class="speech-bubble">
+                        <span><i class="fa-solid fa-gears fa-xl" style="color: #bb86fc;padding-right: 0.75rem;"></i></span>What are your current learning interests?
+
+                        
+                    </div>
+                    <div class="options">
+                        <button class="option-btn" onclick="selectOption(5, 'AI/ML and Data Science', this)">AI/ML and Data Science</button>
+                        <button class="option-btn" onclick="selectOption(5, 'Business Strategy', this)"> Business Strategy</button>
+                        <button class="option-btn" onclick="selectOption(5, 'Creative Arts', this)">Creative Arts</button>
+                        <button class="option-btn" onclick="selectOption(5, 'Doctor (MBBS/MD):', this)">Doctor (MBBS/MD)</button>
+                        <button class="option-btn" onclick="selectOption(5, 'Cultural Activities', this)">Cultural Activities</button>
+                        <button class="option-btn" onclick="selectOption(5, 'Other', this)">Other</button>
+                    </div>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="question" id="question6" style="display: none;">
+                    <div class="speech-bubble">
+                        <span><i class="fa-solid fa-bullseye fa-xl" style="color: #bb86fc;padding-right: 0.75rem;"></i></span>
+
+                        What is your future career goal?
+                    </div>
+                    <div class="options">
+                        <button class="option-btn" onclick="selectOption(6, 'AI/ML Engineer', this)">AI/ML Engineer</button>
+                        <button class="option-btn" onclick="selectOption(6, 'Designer', this)">Designer</button>
+                        <button class="option-btn" onclick="selectOption(6, 'Doctor (MBBS/MD)', this)">Doctor (MBBS/MD)</button>
+                        <button class="option-btn" onclick="selectOption(6, 'Entrepreneurship & Business Strategy', this)">Entrepreneurship & Business Strategy</button>
+                        <button class="option-btn" onclick="selectOption(6, 'Researcher', this)">Researcher</button>
+                        <button class="option-btn" onclick="selectOption(6, 'Other', this)">Other</button>
+                    </div>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="question" id="question7" style="display: none;">
+                    <div class="speech-bubble">
+                        <span><i class="fa-solid fa-book-open-reader fa-xl" style="color: #bb86fc;padding-right: 0.75rem;"></i></span>
+                        One last question: What are your study preferences?
+                    </div>
+                    <div class="options">
+                        <button class="option-btn" onclick="selectOption(7, 'Self-Study', this)"> Self-Study</button>
+                        <button class="option-btn" onclick="selectOption(7, 'Group Study', this)">Group Study</button>
+                        <button class="option-btn" onclick="selectOption(7, 'Workshops and Hackathons', this)">Workshops and Hackathons</button>
+                        <button class="option-btn" onclick="selectOption(7, 'Online Courses', this)">Online Courses</button>
+                        <button class="option-btn" onclick="selectOption(7, 'Offline Classes', this)">Offline Classes</button>
+                        <button class="option-btn" onclick="selectOption(7, 'Other', this)">Other</button>
+                    </div>
+                </div>
+    
+                <!-- Question 3 -->
+                <div class="question" id="question8" style="display: none;margin-top: 16%;justify-content: center;align-items: center;">
+                    <div class="inner-question">
+                        <button id="submit-btn" class="nav-btn"  onclick="submitForm()">GENERATE</button>
+                        <div class="loader" id="css-loader" style="display: none;"></div>
+                    </div>
+                </div>
+    
+                
+            </div>
+            <!-- Navigation buttons -->
+            <div class="nav-btns">
+                <div class="nav-buttons">
+                    <button id="back-btn" class="nav-btn" onclick="prevQuestion()" disabled>BACK</button>
+                    <button id="continue-btn" class="nav-btn" disabled onclick="nextQuestion()" style="display: none;">CONTINUE</button>
+                    <button id="submit-btn" class="nav-btn" style="display: none;" onclick="submitForm()">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <script src="/js/chatbot.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

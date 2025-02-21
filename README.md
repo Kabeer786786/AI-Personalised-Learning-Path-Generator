@@ -1,0 +1,2 @@
+# AI-Personalised-Learning-Path-Generator
+AI-Personalized Learning Path Generator is a web app that tailors learning paths based on user responses, considering education level, interests, and study preferences. It refines categories to specific topics, ensuring a structured, efficient, and customized learning experience.
